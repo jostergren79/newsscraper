@@ -4,7 +4,7 @@ const mongoose = require("mongoose");
 const axios = require("axios");
 const cheerio = require("cheerio");
 
-const db = require("./models");
+const db = require("./models/Article");
 
 const PORT = 3000;
 
