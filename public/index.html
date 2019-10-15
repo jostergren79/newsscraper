@@ -1,5 +1,6 @@
-<html lang="en"><head>
-    <title>Mongo Scraper</title>
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
     <meta charset="UTF-8">
     <title>Scraping With Mongoose</title>
     <style>
@@ -34,63 +35,15 @@
         font-size: 18px;
       }
     </style>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.0.0/materia/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Cormorant+SC" rel="stylesheet">
-    <link rel="stylesheet" href="/assets/css/style.css">
   </head>
-  
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-    <a class="navbar-brand" href="/">Mongo Scraper</a>
-    <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="true" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-  
-    <div class="navbar-collapse collapse in" id="navbarColor01" aria-expanded="true" style="">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="/">Home
-            <span class="sr-only">(current)</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/saved">Saved Articles</a>
-        </li>
-        <li class="nav-item">
-          <a class="btn btn-danger scrape-new">SCRAPE NEW ARTICLES!</a>
-        </li>
-        <li class="nav-item">
-          <a class="btn btn-danger clear">CLEAR ARTICLES!</a>
-        </li>
-      </ul>
+    <div id="wrapper">
+      <h1>Note Scraper</h1>
+      <h2><i>If you can do this...the homework should be no problem.</i></h2>
+      <div id="articles"></div>
+      <div id="notes"></div>
     </div>
-  </nav>
-  
-  <div class="jumbotron text-center">
-    <div class="overlay">
-    </div>
-    <div class="background-image">
-    </div>
-    <div class="caption">
-      <h1>Mongo Scraper</h1>
-      <p>New York Times Edition</p>
-    </div>
-  </div>
-  <div class="container-fluid article-container"><div class="card"><div class="card-header"><h3><a class="article-link" target="_blank" rel="noopener noreferrer" href="https://www.nytimes.com/interactive/2019/10/09/magazine/PewDiePie-interview.html">What Does PewDiePie Really Believe?</a><a class="btn btn-success save">Save Article</a></h3></div><div class="card-body">The biggest YouTuber in the world has been accused of being a closet white nationalist and inspiring mass shootings. He says it’s a misunderstanding.</div></div><div class="card"><div class="card-header"><h3><a class="article-link" target="_blank" rel="noopener noreferrer" href="https://www.nytimes.com/2019/10/10/world/middleeast/syria-turkey-offensive.html">Turkish Town Shelled as Border Fighting Sharply EscalatesHere’s a timeline of events leading up to Turkey’s military strike against a Kurdish-led militia.</a><a class="btn btn-success save">Save Article</a></h3></div><div class="card-body">At least 16 Kurdish fighters were reported to have been killed as Turkish ground forces assaulted towns in northeastern Syria.</div></div><div class="card"><div class="card-header"><h3><a class="article-link" target="_blank" rel="noopener noreferrer" href="https://www.nytimes.com/interactive/2019/10/10/climate/driving-emissions-map.html">The Most Detailed Map of Auto Emissions in America</a><a class="btn btn-success save">Save Article</a></h3></div><div class="card-body">See driving-related emissions in your metro area, road by road.</div></div><div class="card"><div class="card-header"><h3><a class="article-link" target="_blank" rel="noopener noreferrer" href="https://www.nytimes.com/2019/10/10/us/pge-outage.html">600,000 Are Left Without Power After Phase 2 of California CutsHow did PG&amp;E decide which areas to black out, and other questions answered.</a><a class="btn btn-success save">Save Article</a></h3></div><div class="card-body">Intended to prevent wildfires, the blackout may leave some without electricity for several more days, a spokeswoman for PG&amp;E said. Here’s the latest.</div></div><div class="card"><div class="card-header"><h3><a class="article-link" target="_blank" rel="noopener noreferrer" href="https://www.nytimes.com/2019/10/10/books/nobel-literature.html">Nobel Prizes in Literature Awarded to Olga Tokarczuk and Peter Handke</a><a class="btn btn-success save">Save Article</a></h3></div><div class="card-body">The 2018 and 2019 laureates were named at the same time because last year’s prize was postponed over a scandal involving a husband of an academy member.</div></div><div class="card"><div class="card-header"><h3><a class="article-link" target="_blank" rel="noopener noreferrer" href="https://www.nytimes.com/2019/10/10/us/politics/lev-parnas-igor-fruman-arrested-giuliani.html">Trump Administration and Allies Pummeled With New Subpoenas</a><a class="btn btn-success save">Save Article</a></h3></div><div class="card-body">House investigators demanded documents from Rick Perry and testimony from the two associates of Rudolph Giuliani who were arrested.</div></div><div class="card"><div class="card-header"><h3><a class="article-link" target="_blank" rel="noopener noreferrer" href="https://www.nytimes.com/2019/10/10/us/politics/lev-parnas-igor-fruman-arrested-giuliani.html">2 Giuliani Associates Arrested With One-Way Tickets at U.S. AirportTrump Administration and Allies Pummeled With New SubpoenasA Fox poll surprises and conservative scholars call for an “expeditious” impeachment: Read the latest here.</a><a class="btn btn-success save">Save Article</a></h3></div><div class="card-body">House investigators demanded documents from Rick Perry and testimony from the two associates of Rudolph Giuliani who were arrested.</div></div></div>
-  
-  <footer class="footer">
-    <div class="container">
-      <p>New York Times Mongo Scraper</p>
-    </div>
-  </footer>
-  
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/4.4.0/bootbox.min.js"></script>
-  <script src="/assets/javascript/index.js"></script>
-  
-  
-  
-  
-  </body></html>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
